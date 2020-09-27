@@ -1,0 +1,57 @@
+{
+  "products": [
+    	{
+		"id": 1,
+		"name": "Red Seat",
+		"price": 4000,
+		"rating": 3,
+		"description": "This is well designed and crafted product that will suit many needs, in terms of quality, craftsmanship and aesthetics",
+		"picture": "https://www.rightfutons.com/wp-content/uploads/2017/03/Red-Corduroy-Full.jpg"
+	},
+	{
+		"name": "Office Seat",
+		"price": 19999,
+		"rating": 4,
+		"description": "This is well designed and crafted product that will suit many needs, in terms of quality, craftsmanship and aesthetics",
+		"picture": "https://shop.hofindia.com/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/m/a/marco10063m_2_.jpg"
+	},
+	{
+		"name": "ASUS ROG Phone 2",
+		"price": 49999,
+		"rating": 4,
+		"description": "This is well designed and crafted product that will suit many needs, in terms of quality, craftsmanship and aesthetics",
+		"picture": "https://cdn57.androidauthority.net/wp-content/uploads/2019/07/Asus-ROG-Phone-2-rear-straignt-on.jpg"
+	},
+	{
+		"name": "HP Envy 15t",
+		"price": 79999,
+		"rating": 5,
+		"description": "This is well designed and crafted product that will suit many needs, in terms of quality, craftsmanship and aesthetics",
+		"picture": "https://cdn.mos.cms.futurecdn.net/f07d582d103bddf08d798e90422a2082.jpg"
+	},
+	{
+		"name": "Duke 200 bs6",
+		"price": 180000,
+		"rating": 3,
+		"description": "This is well designed and crafted product that will suit many needs, in terms of quality, craftsmanship and aesthetics",
+		"picture": "https://i.pinimg.com/originals/fe/14/2e/fe142e201c0fde728a4b9759ab1966a1.jpg"
+	},
+	{
+		"name": "Samsung Note 20 plus",
+		"price": 90000,
+		"rating": 3,
+		"description": "This is well designed and crafted product that will suit many needs, in terms of quality, craftsmanship and aesthetics",
+		"picture": "https://cdn.vox-cdn.com/thumbor/co_s_wZkxOCc1ahfmJ2hN3cHEKc=/0x0:2048x1985/1200x800/filters:focal(861x830:1187x1156)/cdn.vox-cdn.com/uploads/chorus_image/image/66839511/Galaxy_Note20_Plus_4K4_2048x2048.0.jpg"
+	},
+	{
+		"name": "Floating wall shelves",
+		"price": 1399,
+		"rating": 3,
+		"description": "This is well designed and crafted product that will suit many needs, in terms of quality, craftsmanship and aesthetics",
+		"picture": "https://www.decornation.in/wp-content/uploads/2017/05/red-black-floating-wall-shelves-for-home-decor.jpg"
+	}
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
