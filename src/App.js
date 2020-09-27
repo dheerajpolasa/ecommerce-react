@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Products from "./components/Products";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { fetchProducts } from "./actions";
+
+class App extends React.Component {
+  componentDidMount() {
+    const { store } = this.props;
+    store.subscribe(() => {
+      this.forceUpdate();
+    });
+
+    store.dispatch(fetchProducts());
+  }
+  render() {
+    console.log(this.props.store);
+    // const { products } = this.props.store.getState();
+    const { dispatch } = this.props.store;
+    return (
+      <div className="App">
+        <Navbar />
+        <Products store={this.props.store} dispatch={dispatch} />
+      </div>
+    );
+  }
 }
 
 export default App;
