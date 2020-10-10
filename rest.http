@@ -1,4 +1,4 @@
-GET https://my-json-server.typicode.com/dheerajpolasa/ecommerce-react/products/
+GET https://my-json-server.typicode.com/dheerajpolasa/ecommerce-react/db
 
 ###
 DELETE  https://my-json-server.typicode.com/dheerajpolasa/ecommerce-react/products/1

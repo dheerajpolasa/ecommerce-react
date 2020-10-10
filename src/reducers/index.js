@@ -1,4 +1,9 @@
-import { ADD_PRODUCTS, ADD_TO_CART, REMOVE_FROM_CART } from "../actions";
+import {
+  ADD_PRODUCTS,
+  ADD_PRODUCT_TO_STORE,
+  ADD_TO_CART,
+  REMOVE_FROM_CART,
+} from "../actions";
 
 const initialProductsState = {
   products: [],
@@ -20,6 +25,14 @@ export default function products(state = initialProductsState, action) {
       return {
         ...state,
         cart: state.cart.filter((product) => product.id !== action.product.id),
+      };
+    case ADD_PRODUCT_TO_STORE:
+      return {
+        ...state,
+        products: [
+          { ...action.product, id: state.products.length + 1 },
+          ...state.products,
+        ],
       };
     default:
       return state;

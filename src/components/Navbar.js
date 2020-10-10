@@ -1,38 +1,39 @@
 import React from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { cart } = props.store.getState();
   return (
     <div style={styles.nav}>
       <div style={styles.leftContainer}>
-        <Router>
-          <div style={styles.leftContainer__item}>
-            <img
-              style={styles.cartIcon}
-              src="https://www.jazva.com/cm/Amazon-logo-700x433.jpg"
-              alt="cart-icon"
-            />
-          </div>
-          <div style={styles.leftContainer__item}>
-            <Link to={"/"} style={styles.anchor}>
-              Products
-            </Link>
-          </div>
-          <div style={styles.leftContainer__item}>
-            <Link to={"/add-product"} style={styles.anchor}>
-              Add Product
-            </Link>
-          </div>
-        </Router>
+        <div style={styles.leftContainer__item}>
+          <img
+            style={styles.cartIcon}
+            src="https://www.jazva.com/cm/Amazon-logo-700x433.jpg"
+            alt="cart-icon"
+          />
+        </div>
+        <div style={styles.leftContainer__item}>
+          <Link to={"/"} style={styles.anchor}>
+            Products
+          </Link>
+        </div>
+        <div style={styles.leftContainer__item}>
+          <Link to={"/add-product"} style={styles.anchor}>
+            Add Product
+          </Link>
+        </div>
       </div>
       <div style={styles.rightContainer}>
         <div style={styles.cartIconContainer}>
-          <img
-            style={styles.cartIcon}
-            src="https://image.flaticon.com/icons/svg/3036/3036969.svg"
-            alt="cart-icon"
-          />
-          <span style={styles.cartCount}>2</span>
+          <Link to={"/cart"}>
+            <img
+              style={styles.cartIcon}
+              src="https://image.flaticon.com/icons/svg/3036/3036969.svg"
+              alt="cart-icon"
+            />
+          </Link>
+          <span style={styles.cartCount}>{cart.length}</span>
         </div>
       </div>
     </div>
